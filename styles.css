@@ -1,24 +1,95 @@
-/* Global styles for Odin Recipes */
-:root{--bg:#f8fafc;--card:#ffffff;--accent:#ff6b4a;--muted:#6b7280;--max-width:1000px}
-*{box-sizing:border-box}
-html,body{height:100%}
-body{margin:0;font-family:'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;color:#0f172a;background:linear-gradient(135deg,#f8fafc,#eef2ff);-webkit-font-smoothing:antialiased}
-.container{max-width:var(--max-width);margin:0 auto;padding:1rem}
-.site-header{padding:1rem 0}
-.site-header h1{margin:0;font-size:1.25rem}
-.site-header a{color:inherit;text-decoration:none}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
-.card{background:var(--card);padding:1rem;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.06);transition:transform .15s,box-shadow .15s}
-.card:hover{transform:translateY(-6px);box-shadow:0 12px 36px rgba(2,6,23,0.12)}
-.card img{width:100%;height:150px;object-fit:cover;border-radius:8px;margin-bottom:.5rem}
-.card h3{margin:.3rem 0}
-.card p{color:var(--muted);font-size:.95rem}
-.site-footer{padding:2rem 0;text-align:center;color:var(--muted);font-size:.9rem;margin-top:2rem}
-.recipe img{max-width:100%;height:auto;border-radius:8px;box-shadow:0 6px 18px rgba(2,6,23,0.08);display:block;margin-bottom:1rem}
-.recipe{display:grid;grid-template-columns:1fr;gap:1rem}
-@media(min-width:720px){.recipe{grid-template-columns:1fr 340px}.recipe img{height:100%;object-fit:cover}}
-.ingredients,.steps{background:var(--card);padding:1rem;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.04)}
-.back{display:inline-block;margin-right:1rem;color:var(--accent);text-decoration:none}
-a{color:var(--accent)}
-/* Small utilities */
-.hint{color:var(--muted);font-size:.9rem}
+:root {
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --accent: #ff6b4a;
+    --muted: #6b7280;
+    --max-width: 1100px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', system-ui, sans-serif;
+    color: #0f172a;
+    background: linear-gradient(135deg, #f8fafc, #eef2ff);
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1.25rem;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.card {
+    background: var(--card);
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(2, 6, 23, 0.06);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 36px rgba(2, 6, 23, 0.12);
+}
+
+.card-img {
+    height: 180px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content h3 {
+    margin: 0.25rem 0;
+    font-weight: 600;
+}
+
+.card-content p {
+    color: var(--muted);
+}
+
+.recipe {
+    max-width: 760px;
+}
+
+.recipe .hero {
+    width: 100%;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.site-footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.9rem;
+    padding: 2rem 0;
+}

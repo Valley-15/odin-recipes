@@ -5,36 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Odin Recipes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header class="site-header">
         <div class="container">
-            <h1><a href="/">Odin Recipes</a></h1>
+            <h1>Odin Recipes</h1>
         </div>
     </header>
 
     <main class="container">
         <section class="grid">
-            <article class="card">
-                <a href="recipes/lasagna.html"><img src="https://www.allrecipes.com/thmb/F2P9rX0f1ZLkWZk0T2Zp2D2M_6I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/23600-worlds-best-lasagna-DDMFS-4x3-5b5f6e92e6b8457b9f6f5e74e7c0c2c7.jpg" alt="Lasagna"></a>
-                <h3><a href="recipes/lasagna.html">Lasagna</a></h3>
-                <p>Classic layered pasta with rich meat sauce and cheese.</p>
-            </article>
 
-            <article class="card">
-                <a href="recipes/biryani.html"><img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/12/chicken-biryani.jpg" alt="Chicken Biryani"></a>
-                <h3><a href="recipes/biryani.html">Chicken Biryani</a></h3>
-                <p>Aromatic basmati rice with spiced chicken.</p>
-            </article>
+            <a class="card" href="recipes/lasagna.html">
+                <figure class="card-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Lasagna_%281%29.jpg"
+                        alt="A slice of classic lasagna with cheese and meat sauce" loading="lazy">
+                </figure>
+                <div class="card-content">
+                    <h3>Lasagna</h3>
+                    <p>Classic layered pasta with rich meat sauce and cheese.</p>
+                </div>
+            </a>
 
-            <article class="card">
-                <a href="recipes/pancakes.html"><img src="https://www.allrecipes.com/thmb/3tqz8Wl7xv3rG9vZt6LkPZL7l3Y=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/21014-good-old-fashioned-pancakes-mfs-041-1f25dfc3a1f24d4fbf40a343f660c8b6.jpg" alt="Pancakes"></a>
-                <h3><a href="recipes/pancakes.html">Pancakes</a></h3>
-                <p>Soft, fluffy breakfast pancakes.</p>
-            </article>
+            <a class="card" href="recipes/biryani.html">
+                <figure class="card-img">
+                    <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/12/chicken-biryani.jpg"
+                        alt="Spicy chicken biryani served with basmati rice" loading="lazy">
+                </figure>
+                <div class="card-content">
+                    <h3>Chicken Biryani</h3>
+                    <p>Aromatic basmati rice with spiced chicken.</p>
+                </div>
+            </a>
+
         </section>
     </main>
 
